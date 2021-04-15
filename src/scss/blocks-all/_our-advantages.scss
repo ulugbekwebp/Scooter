@@ -1,0 +1,66 @@
+.our-advantages{
+  position: relative;
+}
+
+.our-advantages__list{
+  @include reset-list;
+  display: flex;
+}
+
+.our-advantages__list::before{
+  content: "";
+  width: 974px;
+  height: 15px;
+  position: absolute;
+  background-color: #D8D8D8;
+  left: -150px;  
+  top: 41px;
+}
+
+.our-advantages__list-tiem{
+  padding-top: 136px;
+  width: 350px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.our-advantages__list-tiem:last-child{
+  margin-right: 0;
+}
+
+.our-advantages__icon-01::before{
+  background: url(../img/app.png) no-repeat center center;
+}
+
+.our-advantages__icon-02::before{
+  background: url(../img/scooter.png) no-repeat center center;
+}
+.our-advantages__icon-03::before{
+  background: url(../img/ride.png) no-repeat center center;
+}
+
+.our-advantages__list-tiem::before{
+  content: "";
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  background-color: #FCB72B;
+  border-radius: 50%;
+  top: 0;
+}
+
+.our-advantages__title{
+  font-family: 'Space Mono';
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  color: #495567;
+  margin-bottom: 27px;
+}
+
+.our-advantages__desc{
+  margin: 0;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+}
