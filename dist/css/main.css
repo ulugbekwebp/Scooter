@@ -215,6 +215,9 @@ img {
   line-height: 25px;
   color: #939CAA; }
 
+.our-convenience {
+  margin-bottom: 200px; }
+
 .our-convenience__list {
   margin: 0;
   padding: 0;
@@ -272,3 +275,35 @@ img {
   border: 1px solid transparent;
   background-color: #FCB72B;
   color: #fff; }
+
+.sign-up {
+  background: #495567;
+  padding: 102px 0;
+  position: relative; }
+
+.sign-up::before {
+  content: "";
+  position: absolute;
+  background: url(../img/around_3.png) no-repeat center center;
+  width: 1161px;
+  height: 363px;
+  top: 150px;
+  right: -163px;
+  z-index: 2; }
+
+.sign-up__title {
+  margin: 0;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  font-family: 'Space Mono';
+  color: #fff;
+  width: 415px;
+  margin-right: auto; }
+
+.sign-up__googleplay {
+  margin-left: 18px; }
+
+.sign-up__wrapper {
+  align-items: center;
+  display: flex; }
