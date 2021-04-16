@@ -34,7 +34,9 @@
   <header>
     <section class="header">
       <div class="header-container">
-        <img class="header__icon" src="img/icon-scoot.svg" alt="icon-scoot">
+        <a href="#">
+          <img class="header__icon" src="img/icon-scoot.svg" alt="icon-scoot">
+        </a>
         <nav>
           <ul class="header__list">
             <li class="header__list-item">
@@ -100,7 +102,7 @@
 
     <div class="our-convenience container">
       <ul class="our-convenience__list">
-        <li class="our-convenience__list-item">
+        <li class="our-convenience__list-item our-convenience__list-item--women">
           <div class="our-convenience__wrapper">
             <h2 class="our-convenience__title">Easy to use riding telemetry</h2>
             <p class="our-convenience__desc">
@@ -109,9 +111,12 @@
             </p>
             <a class="our-convenience__link" href="#">Learn More</a>
           </div>
-          <img class="our-convenience__picture" src="./img/women.jpg" alt="women">
+          <picture>
+            <source type="image/webp" srcset="./img/women.webp">
+            <img class="our-convenience__picture" src="./img/women.jpg" srcset="./img/women.jpg 1x, ./img/women@2x.jpg 2x," alt="women">
+          </picture>
         </li>
-        <li class="our-convenience__list-item">
+        <li class="our-convenience__list-item our-convenience__list-item--city">
           <div class="our-convenience__wrapper">
             <h2 class="our-convenience__title">Coming to a city near you</h2>
             <p class="our-convenience__desc">
@@ -121,9 +126,12 @@
             </p>
             <a class="our-convenience__link" href="#">Learn More</a>
           </div>
-          <img class="our-convenience__picture" src="./img/city.jpg" alt="city">
+          <picture>
+            <source type="image/webp" srcset="./img/city.webp">
+            <img class="our-convenience__picture" src="./img/city.jpg" srcset="./img/city.jpg 1x, ./img/city@2x.jpg 2x" alt="city">
+          </picture>
         </li>
-        <li class="our-convenience__list-item">
+        <li class="our-convenience__list-item our-convenience__list-item--payment">
           <div class="our-convenience__wrapper">
             <h2 class="our-convenience__title">Zero hassle payments</h2>
             <p class="our-convenience__desc">
@@ -133,20 +141,29 @@
             </p>
             <a class="our-convenience__link" href="#">Learn More</a>
           </div>
-          <img class="our-convenience__picture" src="./img/payment.jpg" alt="payment">
+          <picture>
+            <source srcset="./img/payment.webp" type="image/webp">
+            <img class="our-convenience__picture" src="./img/payment.jpg" srcset="./img/payment.jpg 1x, ./img/payment@2x.jpg 2x" alt="payment">
+          </picture>
         </li>
       </ul>
     </div>
 
     <div class="sign-up">
-      <section class="test">
+      <section class="sign-up__around">
         <div class="sign-up__wrapper container">
           <p class="sign-up__title">Sign up and Scoot off today</p>
           <a href="#">
-            <img class="sign-up__appstore" src="./img/appstore.png" alt="appstore">
+            <picture>
+              <source srcset="./img/appstore.webp" type="image/webp">
+              <img class="sign-up__appstore" src="./img/appstore.png" srcset="./img/appstore.png 1x, ./img/appstore@2x.png 2x" alt="appstore">
+            </picture>
           </a>
           <a href="#">
-            <img class="sign-up__googleplay" src="./img/googleplay.png" alt="googleplay">
+            <picture>
+              <source srcset="./img/googleplay.webp" type="image/webp">
+              <img class="sign-up__googleplay" src="./img/googleplay.png" srcset="./img/googleplay.png 1x, ./img/googleplay@2x.png 2x" alt="googleplay">
+            </picture>
           </a>
         </div>
       </section>
@@ -157,7 +174,9 @@
     <div class="container">
       <section class="footer">
         <a href="#">
-          <img class="footer__icon" src="./img/icon-scoot-footer.svg" alt="icon-scoot">
+          <picture>
+            <img class="footer__icon" src="./img/icon-scoot-footer.svg" alt="icon-scoot">
+          </picture>
         </a>
         <nav>
           <ul class="footer__list">
@@ -175,7 +194,6 @@
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a href="#">
-              <!-- <img class="footer__social-icon" src="./img/icon-facebook.svg" alt="icon-facebook"> -->
               <svg class="icon" width="24" height="24">
                 <use xlink:href="#icon-facebook"></use>
               </svg>
@@ -183,12 +201,16 @@
           </li>
           <li class="footer__social-item">
             <a href="#">
-              <img class="footer__social-icon" src="./img/icon-twitter.svg" alt="icon-twitter">
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
             </a>
           </li>
           <li class="footer__social-item">
             <a href="#">
-              <img class="footer__social-icon" src="./img/icon-instagram.svg" alt="icon-instagram">
+              <svg class="icon" width="24" height="24">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
             </a>
           </li>
         </ul>

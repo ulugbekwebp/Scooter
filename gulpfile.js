@@ -10,6 +10,7 @@ var include = require("posthtml-include");
 var svgstore = require("gulp-svgstore");
 var del = require("del");
 var imagemin = require("gulp-imagemin");
+var webp = require("gulp-webp");
 
 var server = require("browser-sync").create();
 
@@ -26,6 +27,14 @@ gulp.task("imagemin", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("src/img"));
+});
+
+gulp.task("webp", function () {
+  return gulp.src("src/img/**/*.{png,jpg}")
+    .pipe(webp({
+      quality: 90
+    }))
+    .pipe(gulp.dest("src/img"))
 })
 
 gulp.task("css", function () {

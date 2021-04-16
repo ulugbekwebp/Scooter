@@ -56,7 +56,6 @@
 
 .our-convenience__wrapper{
   width: 445px;
-  
 }
 
 .our-convenience__picture{
@@ -77,3 +76,31 @@
     background-color: transparent;
   }
 }
+
+.our-convenience__list-item--women::before{
+  content: "";
+  position: absolute;
+  width: 740px;
+  height: 151px;
+  background: url(../img/women-arrow.svg) no-repeat;
+  z-index: 1;
+  bottom: 0;
+  left: 540px;
+}
+
+// .our-convenience__list-item--city{
+//   content: "";
+//   position: absolute;
+//   background: url(../img/city-arrow.svg) no-repeat;
+//   width: 740px;
+//   height: 151px;
+//   z-index: 5;
+//   bottom: 0;
+// }
+
+// .our-convenience__list-item--payment{
+//   background: url(../../img/payment-arrow.svg);
+//   width: 740px;
+//   position: absolute;
+//   height: 151px;
+// }

@@ -6,7 +6,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Lexend Deca'; }
+  font-family: 'Lexend Deca';
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -108,7 +109,6 @@ footer {
   position: relative;
   padding-top: 153px;
   padding-bottom: 152px;
-  max-width: 1440px;
   margin: 0 auto;
   z-index: 1;
   margin-bottom: 160px; }
@@ -164,6 +164,11 @@ footer {
   background-color: #FCB72B;
   left: 0px;
   top: 351px; }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .sharing-made {
+    background: url(../../img/sharing-made@2x.jpg) no-repeat;
+    background-size: cover; } }
 
 .our-advantages {
   position: relative;
@@ -290,8 +295,22 @@ footer {
     color: #FCB72B;
     background-color: transparent; }
 
+.our-convenience__list-item--women::before {
+  content: "";
+  position: absolute;
+  width: 740px;
+  height: 151px;
+  background: url(../img/women-arrow.svg) no-repeat;
+  z-index: 1;
+  bottom: 0;
+  left: 540px; }
+
 .sign-up {
   background: #495567; }
+
+.sign-up__around {
+  background: url(../../img/around_3.png) no-repeat center center;
+  background-position: calc(50% + 300px) calc(50% + 170px); }
 
 .sign-up__title {
   margin: 0;

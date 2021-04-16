@@ -26,5 +26,8 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
     "posthtml-include": "^1.7.0"
+  },
+  "dependencies": {
+    "gulp-webp": "^4.0.1"
   }
 }
