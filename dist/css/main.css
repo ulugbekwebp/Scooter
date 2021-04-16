@@ -20,6 +20,10 @@ header {
 img {
   max-width: 100%; }
 
+footer {
+  background-color: #333A44;
+  padding: 35px 0 32px 0; }
+
 .container {
   max-width: 1140px;
   padding: 0 15px;
@@ -74,6 +78,8 @@ img {
   color: #939CAA;
   font-size: 15px;
   line-height: 25px; }
+  .header__link:hover {
+    color: #FCB72B; }
 
 .header__list-item {
   margin-right: 32px; }
@@ -86,11 +92,15 @@ img {
 
 .header__scootin-link {
   margin-left: auto;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   background-color: #FCB72B;
   color: #fff;
   padding: 14px 39px;
   display: inline-block; }
+  .header__scootin-link:hover {
+    background-color: transparent;
+    border: 3px solid #FCB72B;
+    color: #FCB72B; }
 
 .sharing-made {
   background: url(../img/sharing-made.jpg) no-repeat center center;
@@ -272,24 +282,16 @@ img {
 .our-convenience__link {
   display: inline-block;
   padding: 13px 44px;
-  border: 1px solid transparent;
+  border: 3px solid transparent;
   background-color: #FCB72B;
   color: #fff; }
+  .our-convenience__link:hover {
+    border: 3px solid #FCB72B;
+    color: #FCB72B;
+    background-color: transparent; }
 
 .sign-up {
-  background: #495567;
-  padding: 102px 0;
-  position: relative; }
-
-.sign-up::before {
-  content: "";
-  position: absolute;
-  background: url(../img/around_3.png) no-repeat center center;
-  width: 1161px;
-  height: 363px;
-  top: 150px;
-  right: -163px;
-  z-index: 2; }
+  background: #495567; }
 
 .sign-up__title {
   margin: 0;
@@ -306,4 +308,58 @@ img {
 
 .sign-up__wrapper {
   align-items: center;
+  display: flex;
+  padding-top: 102px;
+  padding-bottom: 102px; }
+
+.footer {
+  display: flex;
+  align-items: center; }
+
+.footer__icon {
+  margin-right: 58.58px; }
+
+.footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex; }
+
+.footer__list-item {
+  margin-right: 32px; }
+
+.footer__list-item:last-child {
+  margin-right: 0; }
+
+.footer__link {
+  color: #939CAA;
+  font-size: 15px;
+  line-height: 25px; }
+  .footer__link:hover {
+    color: #FCB72B; }
+
+.footer__social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto; }
+
+.footer__social-item {
+  margin-right: 24px; }
+
+.footer__social-item:last-child {
+  margin-right: 0; }
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  z-index: 5; }
+
+.face {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+  z-index: 5; }

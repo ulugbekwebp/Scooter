@@ -1,18 +1,9 @@
 .sign-up{
   background: #495567;
-  padding: 102px 0;
-  position: relative;
 }
 
-.sign-up::before{
-  content: "";
-  position: absolute;
-  background: url(../img/around_3.png) no-repeat center center;
-  width: 1161px;
-  height: 363px;
-  top: 150px;
-  right: -163px;
-  z-index: 2;
+.test{
+  
 }
 
 .sign-up__title{
@@ -33,5 +24,6 @@
 .sign-up__wrapper{
   align-items: center;
   display: flex;
-
+  padding-top: 102px;
+  padding-bottom: 102px;
 }
