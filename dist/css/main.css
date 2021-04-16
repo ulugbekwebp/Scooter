@@ -355,11 +355,6 @@ footer {
 .icon {
   width: 24px;
   height: 24px;
-  fill: #fff;
-  z-index: 5; }
-
-.face {
-  width: 24px;
-  height: 24px;
-  fill: #fff;
-  z-index: 5; }
+  fill: #FCB72B; }
+  .icon:hover {
+    fill: #fff; }
