@@ -1,13 +1,13 @@
-.sign-up{
+.call-to-action{
   background: #495567;
 }
 
-.sign-up__around{
+.call-to-action__around{
   background: url(../../img/around_3.png) no-repeat center center;
   background-position: calc(50% + 300px) calc(50% + 170px);
 }
 
-.sign-up__title{
+.call-to-action__title{
   margin: 0;
   font-size: 48px;
   line-height: 48px;
@@ -18,11 +18,11 @@
   margin-right: auto;
 }
 
-.sign-up__googleplay{
+.call-to-action__googleplay{
   margin-left: 18px;
 }
 
-.sign-up__wrapper{
+.call-to-action__wrapper{
   align-items: center;
   display: flex;
   padding-top: 102px;
