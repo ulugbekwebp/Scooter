@@ -109,6 +109,7 @@ footer {
   position: relative;
   padding-top: 153px;
   padding-bottom: 152px;
+  max-width: 1440px;
   margin: 0 auto;
   z-index: 1;
   margin-bottom: 160px; }
@@ -295,15 +296,25 @@ footer {
     color: #FCB72B;
     background-color: transparent; }
 
-.our-convenience__list-item--women::before {
+.our-convenience__list-item:nth-child(1n):before {
   content: "";
   position: absolute;
   width: 740px;
   height: 151px;
-  background: url(../img/women-arrow.svg) no-repeat;
+  background: url(../img/right-arrow.svg) no-repeat;
   z-index: 1;
   bottom: 0;
   left: 540px; }
+
+.our-convenience__list-item:nth-child(2n)::before {
+  background: url(../img/left-arrow.svg) no-repeat;
+  top: 0;
+  left: -550px; }
+
+.our-convenience__list-item:nth-child(3n)::before {
+  background: url(../../img/right-arrow.svg) no-repeat;
+  top: 76px;
+  left: 950px; }
 
 .sign-up {
   background: #495567; }
