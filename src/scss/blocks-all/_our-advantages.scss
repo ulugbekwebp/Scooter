@@ -68,7 +68,7 @@
 }
 
 
-@media screen and (max-width: $tablet) {
+@media screen and (max-width: $tablet){
   .our-advantages__list {
     display: block;
   }
@@ -109,4 +109,34 @@
     left: calc(50% - 245px);
     top:  calc(50% - 400px);
   }
+}
+
+@media screen and (max-width: $mobile) {
+  .our-advantages__list-tiem {
+    padding-top: 80px;
+    padding-left: 0;
+    width: auto;
+    margin-right: 0px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  .our-advantages__list-tiem::before{
+    top: 0;
+    transform: translateX(-50%);
+    left: 50%;
+  }
+  .our-advantages__title{
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.89px;
+    margin-bottom: 24px;
+  }
+
+  .our-advantages__list-tiem::before{
+    width: 56px;
+    height: 56px;
+  }
+
 }

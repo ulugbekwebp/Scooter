@@ -30,8 +30,8 @@
   background: url(../img/oblique-arrow.png) no-repeat;
   width: 452px;
   height: 150px;
-  top: 355px;
-  right: 282px;
+  top: calc(50% + 15px);
+  right: calc(50% - 440px);
 }
 
 .intro__wrapper {
@@ -64,8 +64,8 @@
   height: 15px;
   display: block;
   background-color: #FCB72B;
-  left: 0px;
-  top: 351px;
+  top: calc(50% + 15px);
+  right: calc(50% + 510px);
 }
 
 .intro__link {
@@ -74,6 +74,7 @@
   color: #fff;
   padding: 14px 39px;
   display: inline-block;
+  font-size: 15px;
 
   &:hover {
     background-color: transparent;
@@ -105,6 +106,20 @@ only screen and (min-resolution: 2dppx) {
     margin-bottom: 122px;
   }
 
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+
+    .intro {
+      background: url(../../img/intro-tablet@2x.jpg) no-repeat;
+      background-size: cover;
+    }
+
+  }
+
   .intro__line {
     display: none;
   }
@@ -125,7 +140,39 @@ only screen and (min-resolution: 2dppx) {
   }
 
   .intro::after {
-    top: 510px;
-    right: 430px;
+    top: calc(50% - -160px);
+    right: calc(50% - -50px);
   }
+}
+
+
+@media screen and (max-width: $mobile) {
+  .intro{
+    background: url(../../img/intro-mobile.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+
+    .intro {
+      background: url(../../img/intro-mobile@2x.jpg) no-repeat;
+      background-size: cover;
+    }
+  }
+  .intro__title{
+    width: auto;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.79px;
+  }
+
+  .intro__desc{
+    width: auto;
+  }
+
 }
