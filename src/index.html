@@ -165,13 +165,13 @@
             <a href="#" class="call-to-action__appstore">
               <picture>
                 <source srcset="./img/appstore.webp" type="image/webp">
-                <img src="./img/appstore.png" srcset="./img/appstore.png 1x, ./img/appstore@2x.png 2x" alt="appstore">
+                <img class="call-to-action__appstore-icon" src="./img/appstore.png" srcset="./img/appstore.png 1x, ./img/appstore@2x.png 2x" alt="appstore">
               </picture>
             </a>
             <a href="#" class="call-to-action__googleplay">
               <picture>
                 <source srcset="./img/googleplay.webp" type="image/webp">
-                <img src="./img/googleplay.png" srcset="./img/googleplay.png 1x, ./img/googleplay@2x.png 2x" alt="googleplay">
+                <img class="call-to-action__googleplay-icon" src="./img/googleplay.png" srcset="./img/googleplay.png 1x, ./img/googleplay@2x.png 2x" alt="googleplay">
               </picture>
             </a>
           </div>
@@ -201,29 +201,31 @@
             </li>
           </ul>
         </nav>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a href="#">
-              <svg class="icon" width='24' height='24'>
-                <use xlink:href="#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a href="#">
-              <svg class="icon" width='24' height='24'>
-                <use xlink:href="#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="footer__social-item">
-            <a href="#">
-              <svg class="icon" width='24' height='24'>
-                <use xlink:href="#icon-instagram"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="footer__social-wrapper">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a href="#">
+                <svg class="icon" width='24' height='24'>
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#">
+                <svg class="icon" width='24' height='24'>
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a href="#">
+                <svg class="icon" width='24' height='24'>
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
   </footer>

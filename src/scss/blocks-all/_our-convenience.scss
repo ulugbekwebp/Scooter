@@ -1,5 +1,6 @@
 .our-convenience{
-  margin-bottom: 200px
+  margin-bottom: 200px;
+  overflow-x: hidden
 }
 
 .our-convenience__list{
@@ -102,6 +103,7 @@
 
 @media screen and (max-width: $tablet) {
   .our-convenience{
+    overflow-x: hidden;
     margin-bottom: 104px;
   }
 
@@ -152,5 +154,49 @@
   .our-convenience__list-item:nth-child(3n):before{
     top: calc(50% - 335px);
     left: calc(50% + 415px);
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .our-convenience{
+    overflow-x: hidden;
+  }
+
+  .our-convenience__list-item::after{
+    display: none;
+  }
+
+  .our-convenience__list-item:nth-child(2n)::after{
+    display: none;
+  }
+
+  .our-convenience__list-item:nth-child(n):before{
+    left: calc(50% + 220px);
+    top: calc(50% - 200px);
+  }
+
+  .our-convenience__list-item:nth-child(2n):before{
+    top: 0;
+    left: calc(50% - 290px);
+  }
+
+  .our-convenience__list-item:nth-child(3n):before{
+    top: calc(50% - 335px);
+    left: calc(50% + 335px);
+  }
+
+  .our-convenience__title{
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    width: auto;
+  }
+
+  .our-convenience__desc{
+    width: auto;
+  }
+
+  .our-convenience__wrapper{
+    width: auto;
   }
 }

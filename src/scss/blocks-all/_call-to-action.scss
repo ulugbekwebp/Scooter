@@ -52,4 +52,31 @@
   .call-to-action__around{
     background-position: calc(50%) calc(50% + 160px);
   }
+
+  .call-to-action__appstore-icon{
+    width: 113.57px;
+    height: 40px;
+  }
+
+  .call-to-action__googleplay-icon{
+    width: 130px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .call-to-action__title{
+    width: auto;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .call-to-action__googleplay{
+    margin-left: 12px;
+  }
+
+  .call-to-action__link{
+    display: flex;
+    width: auto;
+  }
 }

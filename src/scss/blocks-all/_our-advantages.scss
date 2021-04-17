@@ -69,6 +69,7 @@
 
 
 @media screen and (max-width: $tablet){
+
   .our-advantages__list {
     display: block;
   }
@@ -112,6 +113,7 @@
 }
 
 @media screen and (max-width: $mobile) {
+
   .our-advantages__list-tiem {
     padding-top: 80px;
     padding-left: 0;
@@ -127,6 +129,7 @@
     transform: translateX(-50%);
     left: 50%;
   }
+  
   .our-advantages__title{
     font-size: 20px;
     line-height: 28px;
@@ -139,4 +142,29 @@
     height: 56px;
   }
 
+  .our-advantages__list::before{
+    display: none;
+  }
+  
+  .our-advantages__icon-01::before {
+    background: url(../img/app-mobile.png) no-repeat center center;
+  }
+  
+  .our-advantages__icon-02::before {
+    background: url(../img/scooter-mobile.png) no-repeat center center;
+  }
+  
+  .our-advantages__icon-03::before {
+    background: url(../img/ride-mobile.png) no-repeat center center;
+  }
+
+  .our-advantages__list-tiem::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    background-color: #FCB72B;
+    border-radius: 50%;
+    top: 0;
+  }
 }

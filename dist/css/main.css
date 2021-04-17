@@ -103,6 +103,10 @@ footer {
     border: 3px solid #FCB72B;
     color: #FCB72B; }
 
+@media screen and (max-width: 573px) {
+  .header__list {
+    display: none; } }
+
 .intro {
   background: url(../img/intro.jpg) no-repeat center center;
   background-size: cover;
@@ -338,10 +342,27 @@ footer {
     margin-bottom: 24px; }
   .our-advantages__list-tiem::before {
     width: 56px;
-    height: 56px; } }
+    height: 56px; }
+  .our-advantages__list::before {
+    display: none; }
+  .our-advantages__icon-01::before {
+    background: url(../img/app-mobile.png) no-repeat center center; }
+  .our-advantages__icon-02::before {
+    background: url(../img/scooter-mobile.png) no-repeat center center; }
+  .our-advantages__icon-03::before {
+    background: url(../img/ride-mobile.png) no-repeat center center; }
+  .our-advantages__list-tiem::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    background-color: #FCB72B;
+    border-radius: 50%;
+    top: 0; } }
 
 .our-convenience {
-  margin-bottom: 200px; }
+  margin-bottom: 200px;
+  overflow-x: hidden; }
 
 .our-convenience__list {
   margin: 0;
@@ -427,6 +448,7 @@ footer {
 
 @media screen and (max-width: 1110px) {
   .our-convenience {
+    overflow-x: hidden;
     margin-bottom: 104px; }
   .our-convenience__list-item {
     flex-direction: column-reverse;
@@ -457,6 +479,32 @@ footer {
   .our-convenience__list-item:nth-child(3n):before {
     top: calc(50% - 335px);
     left: calc(50% + 415px); } }
+
+@media screen and (max-width: 573px) {
+  .our-convenience {
+    overflow-x: hidden; }
+  .our-convenience__list-item::after {
+    display: none; }
+  .our-convenience__list-item:nth-child(2n)::after {
+    display: none; }
+  .our-convenience__list-item:nth-child(n):before {
+    left: calc(50% + 220px);
+    top: calc(50% - 200px); }
+  .our-convenience__list-item:nth-child(2n):before {
+    top: 0;
+    left: calc(50% - 290px); }
+  .our-convenience__list-item:nth-child(3n):before {
+    top: calc(50% - 335px);
+    left: calc(50% + 335px); }
+  .our-convenience__title {
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
+    width: auto; }
+  .our-convenience__desc {
+    width: auto; }
+  .our-convenience__wrapper {
+    width: auto; } }
 
 .call-to-action {
   background: #495567; }
@@ -498,7 +546,24 @@ footer {
     margin-left: 50%;
     transform: translateX(-50%); }
   .call-to-action__around {
-    background-position: calc(50%) calc(50% + 160px); } }
+    background-position: calc(50%) calc(50% + 160px); }
+  .call-to-action__appstore-icon {
+    width: 113.57px;
+    height: 40px; }
+  .call-to-action__googleplay-icon {
+    width: 130px;
+    height: 40px; } }
+
+@media screen and (max-width: 573px) {
+  .call-to-action__title {
+    width: auto;
+    font-size: 32px;
+    line-height: 32px; }
+  .call-to-action__googleplay {
+    margin-left: 12px; }
+  .call-to-action__link {
+    display: flex;
+    width: auto; } }
 
 .footer {
   display: flex;
@@ -546,3 +611,25 @@ footer {
   fill: #FCB72B; }
   .icon:hover {
     fill: #fff; }
+
+@media screen and (max-width: 573px) {
+  .footer {
+    display: block;
+    padding-bottom: 165px; }
+  .footer__icon {
+    margin: 0 auto;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 41.44px; }
+  .footer__social-list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); }
+  .footer__list {
+    display: block;
+    text-align: center; }
+  .footer__list-item {
+    margin: 0;
+    margin-bottom: 16px; }
+  .footer__list-item:last-child {
+    margin-bottom: 85px; } }

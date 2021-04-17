@@ -48,3 +48,8 @@
   }
 }
 
+@media screen and (max-width: $mobile) {
+  .header__list{
+    display: none;
+  }
+}
