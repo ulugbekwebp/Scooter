@@ -28,3 +28,28 @@
   padding-top: 102px;
   padding-bottom: 102px;
 }
+
+
+@media screen and (max-width: $tablet) {
+  .call-to-action__wrapper{
+    display: block;
+    padding-top: 62px;
+    padding-bottom: 62px;
+  }
+
+  .call-to-action__title{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .call-to-action__link{
+    display: inline-block;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .call-to-action__around{
+    background-position: calc(50%) calc(50% + 160px);
+  }
+}

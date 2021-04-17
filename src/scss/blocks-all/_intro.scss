@@ -1,0 +1,131 @@
+.intro {
+  background: url(../img/intro.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  padding-top: 153px;
+  padding-bottom: 152px;
+  // max-width: 1440px;
+  margin: 0 auto;
+  z-index: 1;
+  margin-bottom: 160px;
+}
+
+.intro::before {
+  content: "";
+  top: 0;
+  z-index: -1;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #2F3B59;
+  opacity: 0.75;
+}
+
+.intro::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  display: block;
+  background: url(../img/oblique-arrow.png) no-repeat;
+  width: 452px;
+  height: 150px;
+  top: 355px;
+  right: 282px;
+}
+
+.intro__wrapper {
+  margin-left: 95px;
+}
+
+.intro__title {
+  font-family: "Space Mono";
+  width: 500px;
+  font-size: 56px;
+  line-height: 56px;
+  margin: 0;
+  letter-spacing: -2.5px;
+  color: #fff;
+}
+
+.intro__desc {
+  margin: 0;
+  width: 405px;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  color: #fff;
+}
+
+.intro__line {
+  position: absolute;
+  width: 203px;
+  height: 15px;
+  display: block;
+  background-color: #FCB72B;
+  left: 0px;
+  top: 351px;
+}
+
+.intro__link {
+  border: 3px solid transparent;
+  background-color: #FCB72B;
+  color: #fff;
+  padding: 14px 39px;
+  display: inline-block;
+
+  &:hover {
+    background-color: transparent;
+    border: 3px solid #FCB72B;
+    color: #FCB72B;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+  .intro {
+    background: url(../../img/intro@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+
+}
+
+@media screen and (max-width: $tablet) {
+  .intro {
+    background: url(../img/intro-tablet.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 137px;
+    padding-bottom: 217px;
+    margin-bottom: 122px;
+  }
+
+  .intro__line {
+    display: none;
+  }
+
+  .intro__title {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .intro__desc {
+    text-align: center;
+    margin: 40px auto;
+  }
+
+  .intro__wrapper {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .intro::after {
+    top: 510px;
+    right: 430px;
+  }
+}

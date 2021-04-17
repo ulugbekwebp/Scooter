@@ -1,46 +1,47 @@
-.our-advantages{
+.our-advantages {
   position: relative;
   margin-bottom: 200px
 }
 
-.our-advantages__list{
+.our-advantages__list {
   @include reset-list;
   display: flex;
 }
 
-.our-advantages__list::before{
+.our-advantages__list::before {
   content: "";
   width: 974px;
   height: 15px;
   position: absolute;
   background-color: #D8D8D8;
-  left: -150px;  
+  left: -150px;
   top: 41px;
 }
 
-.our-advantages__list-tiem{
+.our-advantages__list-tiem {
   padding-top: 136px;
   width: 350px;
   margin-right: 30px;
   position: relative;
 }
 
-.our-advantages__list-tiem:last-child{
+.our-advantages__list-tiem:last-child {
   margin-right: 0;
 }
 
-.our-advantages__icon-01::before{
+.our-advantages__icon-01::before {
   background: url(../img/app.png) no-repeat center center;
 }
 
-.our-advantages__icon-02::before{
+.our-advantages__icon-02::before {
   background: url(../img/scooter.png) no-repeat center center;
 }
-.our-advantages__icon-03::before{
+
+.our-advantages__icon-03::before {
   background: url(../img/ride.png) no-repeat center center;
 }
 
-.our-advantages__list-tiem::before{
+.our-advantages__list-tiem::before {
   content: "";
   position: absolute;
   width: 96px;
@@ -50,7 +51,7 @@
   top: 0;
 }
 
-.our-advantages__title{
+.our-advantages__title {
   font-family: 'Space Mono';
   margin: 0;
   font-size: 24px;
@@ -59,9 +60,53 @@
   margin-bottom: 27px;
 }
 
-.our-advantages__desc{
+.our-advantages__desc {
   margin: 0;
   font-size: 15px;
   line-height: 25px;
   color: #939CAA;
+}
+
+
+@media screen and (max-width: $tablet) {
+  .our-advantages__list {
+    display: block;
+  }
+
+  .our-advantages {
+    align-items: center;
+  }
+
+  .our-advantages__list-tiem {
+    padding-top: 0;
+    padding-left: 175px;
+    width: 573px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+  }
+
+  .our-advantages__list-tiem:last-child {
+    margin: 0 auto;
+  }
+
+  .our-advantages__list-tiem::before {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .our-advantages__wrapper {
+    align-items: center;
+  }
+
+  .our-advantages__list::before {
+    content: "";
+    height: 530px;
+    width: 15px;
+    position: absolute;
+    background-color: #D8D8D8;
+    left: calc(50% - 245px);
+    top:  calc(50% - 400px);
+  }
 }
