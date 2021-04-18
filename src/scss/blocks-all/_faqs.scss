@@ -1,0 +1,85 @@
+.faqs{
+  text-align: center;
+  margin-bottom: 160px
+}
+
+.faqs__list {
+  @include reset-list;
+  display: flex;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.faqs__list:last-child{
+  margin-bottom: 0;
+}
+
+.faqs__title{
+  font-family: 'Space Mono';
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14px;
+  color: #495567;
+  margin: 0;
+  margin-bottom: 64px;
+}
+
+.faqs__list-item {
+  width: 35%;
+  margin-right: 30px;
+}
+
+.faqs__item-title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: 'Space Mono';
+  color: #495567;
+}
+
+.faqs__item-list {
+  @include reset-list;
+  width: 100%;
+}
+
+  
+
+.faqs__item-more {
+  width: 65%;
+}
+
+.faqs__item {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.faqs__item:last-child{
+  margin-bottom: 0;
+}
+
+.faqs__button {
+  width: 100%;
+  padding: 32px 40px;
+  background-color: #F2F5F9;
+  border: none;
+}
+
+.faqs__button-title {
+  font-family: 'Space Mono';
+  margin: 0;
+  text-align: start;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07px;
+  color: #495567;
+}
+
+.faqs__button-desc{
+  // display: none;
+  margin: 0;
+  margin-top: 24px;
+  color: #495567;
+  text-align: start;
+  font-size: 15px;
+  line-height: 25px;
+}
