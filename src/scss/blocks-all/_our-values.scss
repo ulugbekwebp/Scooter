@@ -51,7 +51,7 @@
   color: #939CAA;
 }
 
-.our-volues__picture {
+.our-values__picture {
   border-radius: 50%;
   margin-bottom: 87px;
 }
@@ -81,4 +81,39 @@
 
 .our-values__list-item:nth-child(3n):before {
   content: "03";
+}
+
+@media screen and (max-width: $tablet) {
+  .our-values__list{
+    display: block;
+  }
+
+  .our-values__list-item{
+    margin: 0 auto;
+    margin-bottom: 55px;
+    width: auto;
+  }
+
+  .our-values__list-item:last-child{
+    margin: 0 auto;
+  }
+
+  .our-values__title{
+    margin-bottom: 105px;
+  }
+
+  .our-values__item-desc{
+    width: 457px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .our-values__item-desc{
+    width: auto;
+  }
+
+  .our-values__list{
+    margin-bottom: 145px;
+  }
 }

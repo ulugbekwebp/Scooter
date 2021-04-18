@@ -17,11 +17,11 @@
   opacity: 0.75;
 }
 
-.about-intro__wrapper{
+.about-intro__wrapper {
   padding: 72px 0;
 }
 
-.about-intro__around{
+.about-intro__around {
   background: url(../../img/about-around.svg) no-repeat;
   background-position: calc(50% + 635px) calc(50%);
 }
@@ -46,5 +46,43 @@ only screen and (min-resolution: 2dppx) {
   .about-intro {
     background: url(../img/about-intro@2x.jpg) no-repeat;
     background-size: cover;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .about-intro {
+    background: url(../../img/about-intro-tablet.jpg) no-repeat;
+    background-size: cover;
+    width: auto;
+  }
+
+  
+
+  .about-intro__around {
+    background: url(../../img/about-around.svg) no-repeat;
+    background-position: calc(50% + 300px) calc(50%);
+  }
+
+  @media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+
+    .about-intro {
+      background: url(../img/about-intro-tablet@2x.jpg) no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .about-intro__title{
+    text-align: center;
+  }
+
+  .about-intro__around{
+    background: none;
   }
 }
