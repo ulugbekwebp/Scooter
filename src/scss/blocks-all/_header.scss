@@ -62,6 +62,7 @@
 
   .header__scootin-link{
     display: none;
+    animation: opener 0.5s linear;
   }
 
   .header__icon-link{
@@ -94,10 +95,10 @@
 
   .header__scootin-link--active{
     display: block;
-    top: 100%;
+    top: 10%;
     position: absolute;
     z-index: 3;
-    margin-top: 200px;
+    margin-top: calc(100vh - 76px);
   }
 
   .header__nav--active {

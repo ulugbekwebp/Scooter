@@ -160,7 +160,9 @@ footer {
 
 @media screen and (max-width: 738px) {
   .header__scootin-link {
-    display: none; }
+    display: none;
+    -webkit-animation: opener 0.5s linear;
+            animation: opener 0.5s linear; }
   .header__icon-link {
     margin: 0;
     margin-left: 50%;
@@ -186,10 +188,10 @@ footer {
     z-index: -1; }
   .header__scootin-link--active {
     display: block;
-    top: 100%;
+    top: 10%;
     position: absolute;
     z-index: 3;
-    margin-top: 200px; }
+    margin-top: calc(100vh - 76px); }
   .header__nav--active {
     display: block; }
   .header {
