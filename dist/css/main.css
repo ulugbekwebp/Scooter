@@ -656,11 +656,11 @@ footer {
   .call-to-action__around {
     background-position: calc(50%) calc(50% + 160px); }
   .call-to-action__appstore-icon {
-    width: 113.57px;
-    height: 40px; }
+    width: auto;
+    height: auto; }
   .call-to-action__googleplay-icon {
-    width: 130px;
-    height: 40px; } }
+    width: auto;
+    height: auto; } }
 
 @media screen and (max-width: 738px) {
   .call-to-action__title {
@@ -671,7 +671,13 @@ footer {
     margin-left: 12px; }
   .call-to-action__link {
     display: flex;
-    width: auto; } }
+    width: auto; }
+  .call-to-action__appstore-icon {
+    width: auto;
+    height: auto; }
+  .call-to-action__googleplay-icon {
+    width: auto;
+    height: auto; } }
 
 .footer {
   display: flex;
@@ -704,8 +710,7 @@ footer {
   padding: 0;
   list-style: none;
   display: flex;
-  margin-left: auto;
-  align-items: center; }
+  margin-left: auto; }
 
 .footer__social-item {
   margin-right: 24px; }
@@ -721,18 +726,18 @@ footer {
     fill: #fff; }
 
 @media screen and (max-width: 738px) {
+  footer {
+    padding: 64px 0 88px 0; }
   .footer {
-    display: block;
-    padding-bottom: 165px; }
+    flex-direction: column;
+    text-align: center; }
   .footer__icon {
     margin: 0 auto;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-bottom: 41.44px; }
   .footer__social-list {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%); }
+    margin: 0 auto; }
   .footer__list {
     display: block;
     text-align: center; }

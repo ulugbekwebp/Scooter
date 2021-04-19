@@ -54,13 +54,13 @@
   }
 
   .call-to-action__appstore-icon{
-    width: 113.57px;
-    height: 40px;
+    width: auto;
+    height: auto;
   }
 
   .call-to-action__googleplay-icon{
-    width: 130px;
-    height: 40px;
+    width: auto;
+    height: auto;
   }
 }
 
@@ -78,5 +78,15 @@
   .call-to-action__link{
     display: flex;
     width: auto;
+  }
+
+  .call-to-action__appstore-icon{
+    width: auto;
+    height: auto;
+  }
+
+  .call-to-action__googleplay-icon{
+    width: auto;
+    height: auto;
   }
 }
